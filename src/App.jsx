@@ -4,11 +4,14 @@ export default function App() {
   const [calc, setCalc] = useState(0);
 
   let num = 0;
+
   const add = (e) => {
-    (prev) => prev + calc;
+    calc + e.target.value;
+    // (prev) => prev + calc;
     // setCalc(0);
   };
 
+  let answer = num + Number(calc);
   const reset = () => {
     setCalc(0);
   };
@@ -17,7 +20,7 @@ export default function App() {
       <h1>덧셈과 뺄셈이 가능한 앱 만들기</h1>
       <div>
         <input
-          value={num}
+          value={calc}
           onChange={(event) => {
             setCalc(event.target.value);
           }}
@@ -28,7 +31,7 @@ export default function App() {
       <hr />
       <div>
         <h3>결과</h3>
-        <p>{calc}</p>
+        <p>{answer}</p>
       </div>
     </div>
   );
