@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+.layout {
+  min-width: 800px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+form {
+  display: flex;
+  justify-content: center;
+}
+.submit_button {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+}
+
+li {
+  list-style: none;
+  border: 1px solid black;
+  padding: 1rem;
+}
